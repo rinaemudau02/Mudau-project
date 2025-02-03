@@ -1,0 +1,91 @@
+.hero {
+    background: url('C:\Users\Mpho\OneDrive\Desktop\WhatsApp Image 2024-08-18 at 23.27.30_ed451256.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    height: 100vh;
+}
+header{
+    background-color: #08b0f8;
+    color:#fff;
+    padding: 50px;
+    text-align: center;
+}
+
+
+ul{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+/*
+	This code Positions the Ul and li elements in a Horizontal manner
+	It also sets up a Border between each element from li and Ul 	
+*/
+ul li{
+	display:block;
+	Position:relative;
+	border:1px solid #000;
+	float: inline-start;
+}
+/*
+	This code declares that anything that is under li and Ul shouldn't be displayed
+*/
+li ul{
+	display:none;
+}
+/*
+	The following Code sets a Black Background Color on the Navigation bar
+*/
+ul li a{
+	display:block;
+	background: #000;
+	padding:5px 10px 5px 10px;
+	text-decoration:none;
+	white-space:nowrap;
+	color:#fff;
+}
+/*
+	The following code sets a hover over all elements that are a hypertext link
+	all elements that are a link under Unordered list and Li a
+*/
+ul li a:hover{
+	background:#f00;
+}
+
+li:hover ul{
+	display:block;
+	position:absolute;
+}
+/*
+	The following code makes the li block under the hover element not float, but be the same in block size
+*/
+li:hover li{
+	float:none;
+}
+/*
+	This code set all elements that have a li a, to hover with red. that means all li a elements will hover with the same color which is red
+*/
+li:hover a{
+	background:#f00;
+}
+/*
+	This code sets a black hover over all elements that are under the li li a
+*/
+li:hover li a:hover{
+	background:#000;
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+ footer p{
+    margin-bottom: 10px;
+}
+ 
