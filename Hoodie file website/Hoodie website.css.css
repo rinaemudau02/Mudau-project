@@ -1,0 +1,89 @@
+body{
+    background-image: url(https://wallpapers.com/images/featured/hoodie-pictures-hxb4w6xu1li4pd4v.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+
+l
+
+
+
+
+{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+/*
+	This code Positions the Ul and li elements in a Horizontal manner
+	It also sets up a Border between each element from li and Ul 	
+*/
+ul li{
+	display:block;
+	Position:relative;
+	border:1px solid black;
+	float: inline-start;
+}
+/*
+	This code declares that anything that is under li and Ul shouldn't be displayed
+*/
+li ul{
+	display:none;
+}
+/*
+	The following Code sets a Black Background Color on the Nav and Excludes the undeline using the text-decoration element,
+	A space between and around each element and the text is changed to be White is also set for:
+	everything that is under Ul li a list tags
+*/
+ul li a{
+	display:block;
+	background: blue;
+	padding:5px 10px 5px 10px;
+	text-decoration:none;
+	white-space:nowrap;
+	color:#fff;
+}
+/*
+	The following code sets a hover over all elements that are a hypertext link
+	all elements that are a link under Ul Li a
+*/
+ul li a:hover{
+	background: blue;
+}
+/*
+	The following code sets a hover over all elements that are a hypertext link
+	all elements that are a link under li Ul a
+	Remember li Ul was displayed to none, this code displays it under the hover code
+	The position element with an absolute value makes all li ul elements to be displayed under arech other 
+*/
+li:hover ul{
+	display:block;
+	position:absolute;
+}
+/*
+	The following code makes the li block under the hover element not float, but be the same in block size
+*/
+li:hover li{
+	float:none;
+}
+/*
+	This code set all elements that have a li a, to hover with red. that means all li a elements will hover with the same color which is red
+*/
+li:hover a{
+	background:grey;
+}
+/*
+	This code sets a black hover over all elements that are under the li li a
+*/
+li:hover li a:hover{
+	background:#000;
+}
+/*
+	not sure what this code does
+*/
+#drop-nav li ul li{
+	border-bottom:0px;
+}
